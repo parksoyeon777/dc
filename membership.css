@@ -1,0 +1,366 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    word-break: keep-all;
+    outline: 0px solid wheat;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+h1:not(header *) {
+    font-family: 'Noto Serif Display', serif;
+    margin: 30px 0;
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+}
+
+h2:not(header *) {
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    font-size: 2.0rem;
+    line-height: 3.0rem;
+    margin-bottom: 30px;
+}
+
+h3:not(header *) {
+    text-align: center;
+    font-size: 2.0rem;
+    line-height: 3.0rem;
+    margin-bottom: 30px;
+}
+
+article {
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+button:not(.header *) {
+    width: 100%;
+    padding: 8px 0;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: white;
+}
+
+input {
+    position: relative;
+    top: 3px;
+    margin-right: 8px;
+    padding: 8px;
+}
+
+/* 시작 */
+
+/* 로그인 */
+
+.login {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.login form {
+    border: 1px solid #999;
+    padding: 16px;
+}
+
+.login form> :nth-child(1)> p {
+    padding-bottom: 30px;
+    color: #999;
+}
+
+.login form> :nth-child(1)> div> label input {
+    width: 100%;
+    border: 1px solid #999;
+    line-height: 2rem;
+}
+
+.login form> :nth-child(1)> div> :nth-child(2) input {
+    margin: 8px 0;
+}
+
+.login form> :nth-child(1)> div> div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login form> :nth-child(1)> :nth-child(3) {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    background-color: #00435c;
+    color: white;
+}
+
+.login form> :nth-child(1)> :nth-child(4) {
+    background-color: #0890c0;
+    color: white;
+}
+
+.login form> :nth-child(2) {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #999;
+}
+
+.login form> :nth-child(2) button {
+    position: relative;
+    margin-bottom: 10px;
+    display: block;
+    align-items: center;
+}
+
+.login form> :nth-child(2) button img {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.login form> :nth-child(2) button p {
+    display: inline-block;
+}
+
+/* Join Us */
+
+.join-us form fieldset {
+    margin-bottom: 50px;
+    padding: 30px 16px;
+    border: 1px solid #999;
+}
+
+.join-us form> :last-child {
+    margin-bottom: 0;
+}
+
+/* 회원정보 입력 */
+
+.join-us form> :nth-child(1) ul li {
+    margin-bottom: 16px;
+}
+
+.join-us form> :nth-child(1) ul li label {
+    display: block;
+}
+
+.join-us form> :nth-child(1) ul li input {
+    width: 100%;
+    border: 1px solid #999;
+    line-height: 2rem;
+}
+
+.join-us form> :nth-child(1) ul :nth-child(1) div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.join-us form> :nth-child(1) ul :nth-child(1) div input {
+    width: 70%;
+    margin-right: 8px;
+}
+
+.join-us form> :nth-child(1) ul :nth-child(1) div button{
+    width: 30%;
+    background-color: #333;
+    color: white;
+}
+
+.join-us form> :nth-child(1) ul :nth-child(6) div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.join-us form> :nth-child(1) ul :nth-child(6) div input {
+    width: 65%;
+    margin-right: 10px;
+}
+
+.join-us form> :nth-child(1) ul :nth-child(6) div button{
+    width: 35%;
+    background-color: #333;
+    color: white;
+}
+
+.join-us form> :nth-child(1) ul :nth-child(7) {
+    position: relative;
+}
+
+.join-us form> :nth-child(1) ul :nth-child(7) img {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    transform: translate(-50%,-50%);
+    width: 15px;
+    height: 15px;
+}
+
+.join-us form> :nth-child(1) ul :nth-child(8) div {
+    border: 1px solid #999;
+    padding: 0 8px;
+    line-height: 2rem;
+}
+
+.join-us form> :nth-child(1)> div {
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #999;
+}
+
+.join-us form> :nth-child(1)> div label{
+    display: block;
+}
+
+.join-us form> :nth-child(1)> div label span {
+    color: #ccc;
+}
+
+.join-us form> :nth-child(1)> div button {
+    margin: 10px 0;
+    background: #00435c;
+    color: white;
+}
+
+/* 이용약관 */
+
+.join-us form> :nth-child(2) p {
+    border: 1px solid #999;
+    background-color: #eee;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.join-us form> :nth-child(2) label input {
+    margin: 16px 0;
+    margin-right: 8px;
+}
+
+.join-us form> :nth-child(2) :nth-child(4) {
+    margin-bottom: 10px;
+    background-color: #0890c0;
+    color: white;
+}
+
+.join-us form> :nth-child(2) :nth-child(5) {
+    margin-bottom: 30px;
+}
+
+/* 가입완료 */
+
+.join-us form> :nth-child(3) {
+    text-align: center;
+}
+
+.join-us form> :nth-child(3) div {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.join-us form> :nth-child(3) div :nth-child(1) {
+    margin-right: 10px;
+    background-color: #0890c0;
+    color: white;
+}
+
+.join-us form> :nth-child(3) div :nth-child(2) {
+    background-color: #00435c;
+    color: white;
+}
+
+/* Remove Account */
+
+.remove-account h1 {
+    margin-bottom: 30px;
+}
+
+.remove-account form fieldset {
+    margin-bottom: 50px;
+    padding: 30px 16px;
+    border: 1px solid #999;
+    text-align: center;
+}
+
+.remove-account form> :last-child {
+    margin-bottom: 0px;
+}
+
+/* 회원탈퇴 */
+
+.remove-account form> :nth-child(1) :nth-child(3) {
+    margin: 10px 0 30px 0;
+}
+
+.remove-account form> :nth-child(1) button {
+    width: 100px;
+    border: 0px;
+    background-color: #0890c0;
+    color: white;
+}
+
+/* 설문조사 */
+
+.remove-account form> :nth-child(2)> :nth-child(2) {
+    margin-bottom: 16px;
+}
+
+.remove-account form> :nth-child(2)> :nth-child(3) {
+    text-align: left;
+}
+
+.remove-account form> :nth-child(2) select {
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #999;
+    padding: 5px 10px;
+}
+
+.remove-account form> :nth-child(2) label {
+    display: block;
+    text-align: left;
+}
+
+.remove-account form> :nth-child(2) textarea {
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+.remove-account form> :nth-child(2) button {
+    background-color: #00435c;
+    color: white;
+}
+
+/* 탈퇴완료 */
+
+.remove-account form> :nth-child(3) img{
+    width: 50px;
+    height: 50px;
+}
+
+.remove-account form> :nth-child(3) p {
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.remove-account form> :nth-child(3) button {
+    background-color: #0890c0;
+    color: white;
+}

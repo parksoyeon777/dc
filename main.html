@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACE BED</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!-- 제이쿼리 -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    
+</head>
+<body>
+
+    <div class="wrap">
+        
+
+        <header class="header">
+            <div class="container">
+
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="images\logo.png" alt="에이스침대 로고">
+                    </a>
+                </h1>
+    
+                <nav id="gnb" class="gnb">
+
+                    <div class="mob">
+                        <div>
+                            <a href="#" onclick="return false, imperfect()">웨딩맴버스</a>
+                            <a href="#" onclick="return false, imperfect()">에이스침대몰</a>
+                        </div>
+                    </div>
+                    
+                    <ul>
+                        <li><a href="#" onClick="location.href='main.html'">홈</a></li>
+                        <li><a href="#" onClick="location.href='purchase.html'">제품</a></li>
+                        <li><a href="#" onClick="location.href='membership.html'">로그인</a></li>
+                        <li><a href="#" onClick="location.href='membership.html'">회원가입</a></li>
+                        <li><a href="#" onClick="location.href='membership.html'">회원탈퇴</a></li>
+                        <li><a href="#" onClick="location.href='posting.html'">게시판</a></li>
+                        <li><a href="#" onClick="location.href='posting.html'">문의하기</a></li>
+                        <li><a href="#" onClick="location.href='posting.html'">자주묻는 질문</a></li>
+                        <li><a href="#" onClick="location.href='posting.html'">새소식</a></li>
+                    </ul>
+
+                    <div class="mob">
+                        <a href="#" onclick="return false, imperfect()">
+                            <img src="images\banner1.jpg" alt="">
+                            <span>에이스 침대몰<br>바로가기</span>
+                        </a>
+                        <a href="#" onclick="return false, imperfect()">
+                            <img src="images\banner2.jpg" alt="">
+                            <span>에이스 헤리츠<br>바로가기</span>
+                        </a>
+                        <a href="#" onclick="return false, imperfect()">
+                            <img src="images\banner3.jpg" alt="">
+                            <span>에이스 에비뉴<br>바로가기</span>
+                        </a>
+                    </div>
+
+                </nav>
+    
+                <div class="header-icon">
+                    <button id="search" class="search" onclick="searchBut()"><img src="images\search_black.png" alt="검색"></button>
+                    <div id="hamburger" class="hamburger" onclick="openClose()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="seachBox" class="seach-box">
+                <div>
+                    <input id="searchWindow" type="text" placeholder="검색어를 입력하세요.">
+                    <button id="searcBtn" onclick="imperfect()"><img src="images\search_black.png" alt="검색"></button>
+                </div>
+
+                <div>
+                    <p>추천검색어</p>
+                    <a href="#" onclick="return false, imperfect(), imperfect()">#침대</a>
+                    <a href="#" onclick="return false, imperfect(), imperfect()">#가구</a>
+                    <a href="#" onclick="return false, imperfect(), imperfect()">#스트레스리스</a>
+                    <a href="#" onclick="return false, imperfect(), imperfect()">#슬립케어</a>
+                    <a href="#" onclick="return false, imperfect(), imperfect()">#에이스 스토리</a>
+                </div>
+            </div>
+
+        </header>
+
+        <script>
+
+            //검색버튼
+            const seachBoxs = document.querySelector("#seachBox");
+
+            function searchBut() {
+                if (seachBoxs.style.display === "none") {
+                    seachBoxs.style.display = "block"
+                } else {
+                    seachBoxs.style.display = "none"
+                }
+            }
+
+            //햄버거 버튼
+
+            const gnbs = document.querySelector("#gnb");
+            const hamburgers = document.querySelector("#hamburger");
+            const searchs = document.querySelector("#search");
+            
+            function screen() {
+                if (window.innerWidth >= 1366) {
+                    gnbs.style.display = "block";
+                } else {
+                    gnbs.style.display = "none";
+                }
+            }
+            
+            window.addEventListener('resize', screen);
+
+            function openClose() {
+                if (gnbs.style.display == "none") {
+                    gnbs.style.display = "block";
+                    hamburgers.classList.add('active');
+                    document.body.style.overflow = "hidden";
+                    searchs.style.display = "none"
+                } else {
+                    gnbs.style.display = "none";
+                    hamburgers.classList.remove('active');
+                    document.body.style.overflow = "scroll";
+                    searchs.style.display = "block"
+                }
+            }
+
+        </script>
+    
+    
+        <main class="contents">
+
+            <article class="visual">
+
+                <div class="slide-box">
+                    <section id="slide" onclick="return false, imperfect();">
+                        <video muted autoplay loop>
+                        <source src="images\visual1.mp4" type="video/mp4">
+                        </video> </section>
+                    <section id="slide" onclick="return false, imperfect();">
+
+                        <div class="img-web">
+                            <img src="images\visual2_pc.jpg" alt="메인 웹 이미지 2">
+                        </div>
+                        <div class="img-mob">
+                            <img src="images\visual2_mo.jpg" alt="메인 모바일 이미지2">
+                        </div>
+
+                        <div class="text">
+                            <strong>스프링</strong>
+                            <p>침대는 스프링 기술로 발전했습니다. 이처럼 좋은 침대의 첫 번째 기준은 바로 스프링입니다.<br>침대 스프링의 역사를 바꾼 에이스침대만의 스프링으로 또 다시 세계인의 잠자리를 혁신합니다.</p>
+                        </div>
+
+                    </section>
+                    <section id="slide" onclick="return false, imperfect();">
+
+                        <div class="img-web">
+                            <img src="images\visual3_pc.jpg" alt="메인 웹 이미지 3">
+                        </div>
+
+                        <div class="img-mob">
+                            <img src="images\visual3_mo.jpg" alt="메인 모바일 이미지3">
+                        </div>
+
+                        <div class="text">
+                            <strong>이동수면공학 연구소</strong>
+                            <p>대한민국 침대문화를 리드해 온 에이스침대가 첨단 측정장비를 갖추고 고객을 직접 찾아가 최적의 침대를 선정해 드리는 신개념의 ‘찾아가는 침대과학 서비스’ 입니다.</p>
+                        </div>
+                            
+                    </section>
+                </div>
+    
+                <div class="btns">
+                    <span id="btn" onclick="showSlide(0)"></span>
+                    <span id="btn" onclick="showSlide(1)"></span>
+                    <span id="btn" onclick="showSlide(2)"></span>
+                </div>
+    
+            </article>
+    
+            <script>
+    
+                const slides = document.querySelectorAll("#slide");
+                const btns = document.querySelectorAll("#btn");
+    
+                function mainSlide(index) {
+    
+                    slides.forEach((slide, i) => {
+                        if (i === index) {
+                            slide.style.display = "block";
+                        } else {
+                            slide.style.display = "none";
+                        }
+                    });
+    
+                    btns.forEach((btn, i) => {
+                        if (i === index) {
+                            btn.style.backgroundColor = "#0890c0";
+                        } else {
+                            btn.style.backgroundColor = "#ccc";
+                        }
+                    });
+    
+                }
+    
+                function showSlide(index) {
+                    mainSlide(index);
+                }
+    
+            </script>
+            
+           
+            <article class="news">
+                <div class="container">
+
+                    <h2>ACE NEWS</h2>
+            
+                    <div>
+                        <section onclick="return false, imperfect();">
+                            <p>매장오픈소식</p>
+                            <p>신세계백화점 경기점 리뉴얼 OPEN</p>
+                        </section>
+                        <section onclick="return false, imperfect();">
+                            <p>매장오픈소식</p>
+                            <p>롯데백화점 본점 리뉴얼 OPEN</p>
+                        </section>
+                        <section onclick="return false, imperfect();">
+                            <p>매장오픈소식</p>
+                            <p>현대백화점 중동점 OPEN</p>
+                        </section>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="science">
+                <div class="container">
+
+                    <h2>ACE SCIENCE</h2>
+    
+                    <div class="tab-container">
+                        <section id="tabBox">
+                            <video id="video1" autoplay="" loop="" muted="" playsinline="">
+                                <source src="images\ace_science_01.mp4" type="video/mp4">
+                            </video>
+                            <div>
+                                <div>
+                                    <h3>HYBRID Z SPRING</h3>
+                                    <strong>오늘밤 어떤 스프링으로<br>만든 침대에서<br>주무시겠습니까?</strong>
+                                    <p>에이스만의 첨단 공학이 적용된 스프링은 인체 곡선과 하중 분푸에 따라 위에서 한 번 부드럽게 맞춰주고 밑에서 또 한 번 단단하게 받쳐줍니다.</p>
+                                </div>
+                            </div>
+                        </section>
+        
+                        <section id="tabBox">
+                            <video id="video1" autoplay="" loop="" muted="" playsinline="">
+                                <source src="images\ace_science_02.mp4" type="video/mp4">
+                            </video>
+                            <div>
+                                <div>
+                                    <h3>5 FREE SYSTEM</h3>
+                                    <strong>휴식을 방해하는<br>모든 것이 사라지는 순간,<br>완벽한 편안함이<br>시작됩니다</strong>
+                                    <p>꺼짐, 빈틈, 쏠림, 소음 흔들림으로부터 자유롭게! 어떤 몸 상태에도 적용되는 5 FREE SYSTEM으로 최상의 숙면 조건을 만듭니다.</p>
+                                </div>
+                            </div>
+                        </section>
+        
+                        <section id="tabBox">
+                            <video id="video1" autoplay="" loop="" muted="" playsinline="">
+                                <source src="images\ace_science_03.mp4" type="video/mp4">
+                            </video>
+                            <div>
+                                <div>
+                                    <h3>NEW MATERIAL</h3>
+                                    <strong>시원하게, 위생적으로<br>최고의 잠을 위한<br>새로운 기술</strong>
+                                    <p>최고 품질을 위해 중요한 소재 하나하나까지 직접 개발, 생산한 신소재만을 사용합니다.</p>
+                                </div>
+                            </div>
+                        </section>
+        
+                        <section id="tabBox">
+                            <video id="video1" autoplay="" loop="" muted="" playsinline="">
+                                <source src="images\ace_science_04.mp4" type="video/mp4">
+                            </video>
+                            <div>
+                                <div>
+                                    <h3>ECO & HEALTH</h3>
+                                    <strong>피부에 가까운 만큼<br>더욱 안전하게<br>당신의 하루가<br>건강해집니다</strong>
+                                    <p>최고 품질을 위해 중요한 소재 하나하나까지 직접 개발, 생산한 신소재만을 사용합니다</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="science-btn">
+                            <button id="scienceBtn" onclick="scienceSlide(0)"></button>
+                            <button id="scienceBtn" onclick="scienceSlide(1)"></button>
+                            <button id="scienceBtn" onclick="scienceSlide(2)"></button>
+                            <button id="scienceBtn" onclick="scienceSlide(3)"></button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </article>
+
+            <script>
+                const tabBoxs = document.querySelectorAll("#tabBox");
+                const scienceBtns = document.querySelectorAll("#scienceBtn");
+    
+                function scienceSlide(index) {
+    
+                    tabBoxs.forEach((Boxs, i) => {
+                        if (i === index) {
+                            Boxs.style.display = "block";
+                        } else {
+                            Boxs.style.display = "none";
+                        }
+                    });
+    
+                    scienceBtns.forEach((Btns, i) => {
+                        if (i === index) {
+                            Btns.style.backgroundColor = "#0890c0";
+                        } else {
+                            Btns.style.backgroundColor = "#999";
+                        }
+                    });
+    
+                }
+    
+                function scienceSlides(index) {
+                    scienceSlide(index);
+                }
+            </script>
+
+
+            <article class="sns">
+                <div class="container">
+
+                    <h2>NOW SNS</h2>
+
+                    <div>
+                        <div class="flow_banner">
+                            <ul class="list">
+                                <li>
+                                    <a href="#" onclick="return false, imperfect()" class="resize">
+                                        <img src="images\now_sns_01.png" alt="NEW BACIO">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false, imperfect()" class="resize">
+                                        <img src="images\now_sns_02.png" alt="에이스테이 VOL.23">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false, imperfect()" class="resize">
+                                        <img src="images\now_sns_03.png" alt="세계고양이의 날">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false, imperfect()" class="resize">
+                                        <img src="images\now_sns_04.png" alt="NEW ERICA">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false, imperfect()" class="resize">
+                                        <img src="images\now_sns_05.png" alt="에이스테이 VOL.22">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false, imperfect()" class="resize">
+                                        <img src="images\now_sns_06.png" alt="이동수면공학연구소">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false, imperfect()" class="resize">
+                                        <img src="images\now_sns_07.png" alt="Royal Ace">
+                                    </a>
+                                </li>
+                            </ul>                
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#" onclick="return false, imperfect()">
+                            <img
+                            onclick="imperfect()"
+                            src="images\Instagram.png"
+                            alt="인스타그램">
+                        </a>
+                        <a href="#" onclick="return false, imperfect()">
+                            <img
+                            onclick="imperfect()"
+                            src="images\facebook,.png"
+                            alt="페이스북">
+                        </a>
+                        <a href="#" onclick="return false, imperfect()">
+                            <img
+                            onclick="imperfect()"
+                            src="images\blog.png"
+                            alt="블로그">
+                        </a>
+                        <a href="#" onclick="return false, imperfect()">
+                            <img
+                            onclick="imperfect()"
+                            src="images\youtube.png"
+                            alt="유튜브" >
+                        </a>
+                    </div>
+
+                </div>
+            </article>
+
+            <script>
+
+                // 출저 - https://ctrlcccv.github.io/code/2023-07-23-flow-banner/
+
+                $(window).on('load', function() {
+                    setFlowBanner();
+                })
+
+                function setFlowBanner() {
+                    const $wrap = $('.flow_banner');
+                    const $list = $('.flow_banner .list');
+                    let wrapWidth = ''; //$wrap의 가로 크기
+                    let listWidth = ''; //$list의 가로 크기
+                    const speed = 92; //1초에 몇픽셀 이동하는지 설정
+
+                    //리스트 복제
+                    let $clone = $list.clone();
+                    $wrap.append($clone);
+                    flowBannerAct()
+
+                    //반응형 :: 디바이스가 변경 될 때마다 배너 롤링 초기화
+                    let oldWChk = window.innerWidth > 1279 ? 'pc' : window.innerWidth > 767 ? 'ta' : 'mo';
+                    $(window).on('resize', function() {
+                        let newWChk = window.innerWidth > 1279 ? 'pc' : window.innerWidth > 767 ? 'ta' : 'mo';
+                        if (newWChk != oldWChk) {
+                            oldWChk = newWChk;
+                            flowBannerAct();
+                        }
+                    });
+
+                    //배너 실행 함수
+                    function flowBannerAct() {
+                        //배너 롤링 초기화
+                        if (wrapWidth != '') {
+                            $wrap.find('.list').css({
+                                'animation': 'none'
+                            });
+                            $wrap.find('.list').slice(2).remove();
+                        }
+                        wrapWidth = $wrap.width();
+                        listWidth = $list.width();
+
+                        //무한 반복을 위해 리스트를 복제 후 배너에 추가
+                        if (listWidth < wrapWidth) {
+                            const listCount = Math.ceil(wrapWidth * 2 / listWidth);
+                            for (let i = 2; i < listCount; i++) {
+                                $clone = $clone.clone();
+                                $wrap.append($clone);
+                            }
+                        }
+                        $wrap.find('.list').css({
+                            'animation': `${listWidth / speed}s linear infinite flowRolling`
+                        });
+                    }
+
+                    // 마우스가 요소 위로 진입했을 때 일시정지
+                    $wrap.on('mouseenter', function () {
+                        $wrap.find('.list').css('animation-play-state', 'paused');
+                    });
+
+                    // 마우스가 요소에서 빠져나갈 때 재생
+                    $wrap.on('mouseleave', function () {
+                        $wrap.find('.list').css('animation-play-state', 'running');
+                    });
+                }
+            </script>
+        
+        
+            <article class="map">
+
+                <div class="box">
+                    <img src="https://www.acebed.com/common/images/store-map.jpg" alt="지도">
+                </div>
+
+
+                <div class="container">
+                    <div class="box">
+                        <p>현재 고객님과 가까운<br>매장을 안내해 드립니다.</p>
+                        <div>
+                            <input type="text" placeholder="매장 명 및 지역검색">
+                            <button onclick="imperfect()"><img src="images\search_white.png" alt="검색"></button>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        
+            
+            <article class="service">
+                <div class="container">
+                    <a href="#" onclick="return false, btn()">
+                        <img src="images\product_manual.png" alt="제품 매뉴얼">
+                        <p>제품 매뉴얼</p>
+                    </a>
+                    <a href="#" onclick="return false, btn()">
+                        <img src="images\advice.png" alt="A/S 및 상담">
+                        <p>A/S 및 상담</p>
+                    </a>
+                    <a href="#" onclick="return false, imperfect()">
+                        <img src="images\faq.png" alt="자주 묻는 질문">
+                        <p>자주 묻는 질문</p>
+                    </a>
+                </div>
+            </article>
+        
+
+            <article class="call">
+                <div class="container">
+
+                    <div class="text">
+                        <p>고객센터</p>
+                        <p class="number">1599-7121</p>
+                        <p>09:30~18:30,<br>토요일&공휴일 휴무</p>
+                    </div>
+
+                    <div class="text">
+                        <p>A/S 문의</p>
+                        <p class="number">080-735-7123</p>
+                        <p>09:30~18:30<br>토요일&공휴일 휴무</p>
+                    </div>
+
+                    <div class="img"></div>
+
+                </div>
+            </article>
+
+
+        </main>
+    
+    
+        <footer class="footer">
+
+            <div class="footer-top">
+                <div class="container">
+                    <ul class="fnb">
+                        <li><a href="#" onclick="return false, imperfect()">기업정보</a></li>
+                        <li><a href="#" onclick="return false, imperfect()">이용약관</a></li>
+                        <li><a href="#" onclick="return false, imperfect()">개인정보처리방침</a></li>
+                        <li><a href="#" onclick="return false, imperfect()">매장개설안내</a></li>
+                        <li><a href="#" onclick="return false, imperfect()">특판사업</a></li>
+                        <li><a href="#" onclick="return false, imperfect()">고객지원</a></li>
+                        <li><a href="#" onclick="return false, imperfect()">구매인증센터</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="text">
+                        <p>(주)에이스침대 / 사업자등록번호 : <span class="number">129-81-02666</span></p>
+                        <p>본사 : 경기도 성남시 중원구 사기막골로 105번길 42(상대원동) / 서울영업본부 : 서울특별시 강남구 도산대로 218 / FAX : <span class="number">02-544-8788</span></p>
+                        <p>COPYRIGHT (C) ACE BED CORPORATION ALL RIGHTS RESERVED</p>
+                    </div>
+
+                    <div class="select">
+                        <ul id="optioned">
+                            <li class="option"><a href="#" onclick="return false, imperfect()">ENGLISH</a></li>
+                            <li class="option"><a href="#" onclick="return false, imperfect()">에이스 에비뉴</a></li>
+                            <li class="option"><a href="#" onclick="return false, imperfect()">에이스 헤리츠</a></li>
+                            <li class="option"><a href="#" onclick="return false, imperfect()">에이스 침대몰</a></li>
+                        </ul>
+                        <div class="selected" onclick="selects()">
+                            <span>FAMILY SITE</span>
+                            <span id="direction">▼</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <script>
+
+            const options = document.querySelector("#optioned")
+            const directions = document.querySelector("#direction");
+            
+            function selects() {
+                if (options.style.display == "none") {
+                    options.style.display = "block"
+                    directions.classList.add('active');
+                } else {
+                    options.style.display = "none"
+                    directions.classList.remove('active');
+                }
+            }
+
+        </script>
+
+    </div>
+
+    <script>
+
+        function btn(){
+            alert("로그인하세요");
+        }
+
+        function imperfect(){
+            alert("준비중입니다");
+        }
+
+    </script>
+
+</body>
+</html>

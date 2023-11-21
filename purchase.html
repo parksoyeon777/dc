@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박소연</title>
+    <link rel="stylesheet" href="purchase.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+
+    <div w3-include-html="header.html"></div>
+
+
+    <main>
+
+        <article class="amande">
+            <div class="container">
+
+                <div class="left">
+
+                    <div>
+                        <img id="imageContainer"
+                        src="images\amande.jpg"
+                        alt="AMANDE">
+                    </div>
+        
+                    <div>
+                        <img onclick="change_img(this)"
+                        src="images\amande.jpg"
+                        alt="AMANDE">
+                        <img onclick="change_img(this)"
+                        src="images\article01_two.jpg"
+                        alt="">
+                        <img onclick="change_img(this)"
+                        src="images\article01_three.jpg"
+                        alt="">
+                    </div>
+        
+                </div>
+        
+                <div class="right">
+        
+                    <div class="top">
+                        <div>
+                            <p>아르노2</p>
+                            <strong>ARNO-Ⅱ</strong>
+                            <p>1,918,000원~</p>
+                        </div>
+        
+                        <div>
+                            <div>
+                                <p>59</p>
+                                <button>
+                                    <img src="images\heart.svg"
+                                    id="heart"
+                                    onclick="heartBtn(this)">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="center">
+        
+                        <div>
+                            <p>배송기간<span>약 10일</span></p>
+                            <p>배송비<span>무료배송</span></p>
+                        </div>
+        
+                        <div>
+                            <p>배송방법<span>직배송</span></p>
+                            <p>배송가능지역<span>전국</span></p>
+                        </div>
+        
+                        <select>
+                            <option>[필수] 색상을 선택해주세요</option>
+                            <option>파운더핑크</option>
+                        </select>
+        
+                    </div>
+        
+                    <div class="bottom">
+
+                        <div>
+                            <strong>총 구매가</strong>
+                            <p>1,918,000원</p>
+                        </div>
+        
+                        <div>
+                            <button onclick="btn()">결제하기</button>
+                            <button onclick="btn()">장바구니</button>
+                            <button>
+                                <img src="images\heart.svg"
+                                id="heart"
+                                onclick="heartBtn(this)">
+                            </button>
+                        </div>
+
+                    </div>
+        
+                </div>
+
+            </div>
+        </article>
+
+        <article class="product">
+            <div class="container">
+
+                <h4>상품필수정보</h4>
+    
+                <div>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <img src="images\article02_size.png" alt="사이즈">
+                                사이즈
+                            </li>
+                            <li><b>k 사이즈</b></li>
+                                <ul>
+                                    <li>너비 1,690mm</li>
+                                    <li>길이 2,178mm</li>
+                                    <li>높이 1,223mm</li>
+                                </ul>
+                            <li><b>LQ 사이즈</b></li>
+                                <ul>
+                                    <li>너비 1,520mm<li>
+                                    <li>길이 2,098mm</li>
+                                    <li>높이 1,204mm</li>
+                                </ul>
+                        </ul>
+            
+                        <ul id="page" class="page">
+                            <li>
+                                <img src="images\article02_use.png" alt="용도">
+                                용도
+                            </li>
+                            <li>2인 침대</li>
+                            <li>신혼침대</li>
+                        </ul>
+            
+                        <ul id="page" class="page">
+                            <li>
+                                <img src="images\article02_material.png" alt="소재">
+                                소재
+                            </li>
+                            <li>패브릭</li>
+                        </ul>
+            
+                        <ul id="page" class="page">
+                            <li>
+                                <img src="images\article02_concept.png" alt="컨셉/타입">
+                                컨셉/타입
+                            </li>
+                            <li><b>컨셉</b></li>
+                                <ul>
+                                    <li>클래식</li>
+                                    <li>호텔형</li>    
+                                </ul>
+                            <li><b>타입</b></li>
+                                <ul>
+                                    <li>N Type</li>
+                                </ul>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+    
+        <article class="detail">
+            <div class="container">
+
+                <section>
+                    <div>
+                        <img src="images\article03_one.jpg" alt="">
+                    </div>
+                    <div>
+                        <div>
+                            <strong>POINT #1</strong>
+                            <p>헤드보드 중앙에서부터 부드럽게 내려오는 유니크한 프로파일로 포근한 느낌을 주는 침대</p>
+                        </div>
+                    </div>
+                </section>
+        
+                <section>
+                    <div>
+                        <img src="images\article03_two.jpg" alt="">
+                    </div>
+                    <div>
+                        <div>
+                            <strong>POINT #2</strong>
+                            <p>포근한 감성을 연출하는 AMANDE의 원단은 기본 발수 코딩이 적용되어 관리 용이</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div>
+                        <img src="images\article03_three.jpg" alt="">
+                    </div>
+                    <div>
+                        <div>
+                            <strong>POINT #3</strong>
+                            <p>심플하면서 고급스러운 느낌을 연출하는 섬세한 스티치 마감</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+
+    </main>
+
+
+    <div w3-include-html="footer.html"></div>
+
+
+    <script src="Purchase.js"></script>
+
+
+    <script>
+        includeHTML();
+    </script>
+
+</body>
+</html>
