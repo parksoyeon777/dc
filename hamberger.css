@@ -61,10 +61,6 @@ a {
     cursor: default;
 }
 
-img, video {
-    width: 100px;
-}
-
 /* 재사용 클래스 */
 
 .container {
@@ -98,6 +94,7 @@ img, video {
 }
  
 .logo a img {
+    width: 100px;
     height: 40px;
 }
 
