@@ -392,10 +392,6 @@ img, video {
         display: none;
     }
 
-    .header .gnb ul> :nth-child(1) {
-        display: none;
-    }
-
     .header .seach-box {
         width: 1000px;
         margin: 0 auto;
