@@ -98,8 +98,8 @@ img, video {
 }
  
 .logo a img {
-    width: 100px;
-    height: 40px;
+    width: 100%;
+    height: 30px;
 }
 
 .gnb.active {
