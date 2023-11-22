@@ -28,6 +28,7 @@ main {
 }
 
 h1:not(header *) {
+    margin-top: 100px;
     margin-bottom: 50px;
     font-family: 'Noto Serif Display', serif;
     text-align: center;
@@ -508,6 +509,7 @@ input {
 }
 
 .news h1{
+    margin-top: 0;
     margin-bottom: 30px;
 }
 
