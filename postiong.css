@@ -68,7 +68,7 @@ input {
 
 /* 시작 */
 
-.Board> :nth-child(1) {
+.board> :nth-child(1) {
     margin-top: 100px;
 }
 
