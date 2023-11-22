@@ -36,33 +36,41 @@ function includeHTML() {
 }
 
 // 헤더 영역 - 검색
-const seachBoxs = document.querySelector("#seachBox");
 
 function searchBut() {
+
+    const seachBoxs = document.querySelector("#seachBox");
+
     if (seachBoxs.style.display === "none") {
         seachBoxs.style.display = "block"
     } else {
         seachBoxs.style.display = "none"
     }
+
 }
 
 // 헤더 영역 - 햄버거 버튼
 
-const gnbs = document.querySelector("#gnb");
-const hamburgers = document.querySelector("#hamburger");
-const searchs = document.querySelector("#search");
-
 function screen() {
+
+    const gnbs = document.querySelector("#gnb");
+
     if (window.innerWidth >= 1366) {
         gnbs.style.display = "block";
     } else {
         gnbs.style.display = "none";
     }
+
 }
 
 window.addEventListener('resize', screen);
 
 function openClose() {
+
+    const gnbs = document.querySelector("#gnb");
+    const hamburgers = document.querySelector("#hamburger");
+    const searchs = document.querySelector("#search");
+
     if (gnbs.style.display == "none") {
         gnbs.style.display = "block";
         hamburgers.classList.add('active');
