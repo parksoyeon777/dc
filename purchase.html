@@ -41,6 +41,14 @@
                     </div>
         
                 </div>
+
+                <script>
+                    // 외부링크로 하면 작동안함.
+                    const container = document.getElementById("imageContainer");
+                    function change_img(image) {
+                        container.src = image.src;
+                    }
+                </script>
         
                 <div class="right">
         
@@ -223,7 +231,7 @@
         includeHTML();
     </script>
 
-    <script src="Purchase.js"></script>
+
     <script type="text/javascript" src="script.js"></script>
 
 </body>

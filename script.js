@@ -1,3 +1,12 @@
+function btn() {
+    alert("로그인하세요");
+}
+    
+function imperfect() {
+    alert("준비중입니다");
+}
+
+// 인크루드
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */
@@ -26,9 +35,7 @@ function includeHTML() {
   }
 }
 
-//헤더 영역
-
-//검색버튼
+// 헤더 영역 - 검색
 const seachBoxs = document.querySelector("#seachBox");
 
 function searchBut() {
@@ -39,7 +46,7 @@ function searchBut() {
     }
 }
 
-//햄버거 버튼
+// 헤더 영역 - 햄버거 버튼
 
 const gnbs = document.querySelector("#gnb");
 const hamburgers = document.querySelector("#hamburger");
@@ -69,17 +76,7 @@ function openClose() {
     }
 }
 
-function btn(){
-alert("로그인하세요");
-}
-
-function imperfect(){
-alert("준비중입니다");
-}
-
-// 푸터 영역
-
-// 옵션
+// 푸터 영역 - 옵션
 const options = document.querySelector("#optioned")
 const directions = document.querySelector("#direction");
 
@@ -93,11 +90,56 @@ function selects() {
     }
 }
 
-// 클릭시
-function btn(){
-    alert("로그인하세요");
-}
+// 맴버십 영역 - join-us
+// 출저 - https://cruella-de-vil.tistory.com/67
 
-function imperfect(){
-    alert("준비중입니다");
+document.addEventListener('DOMContentLoaded', () => {
+    const ckTag = document.getElementById('id_a')
+    const evtBtnTag1 = document.getElementById('id_b')
+    const evtBtnTag2 = document.getElementById('id_c')
+    const evtBtnTag3 = document.getElementById('id_d')
+    
+    ckTag.addEventListener('click', (event) => {
+
+        const chckValue = event.currentTarget.checked;
+
+        evtBtnTag1.checked = chckValue
+        evtBtnTag2.checked = chckValue
+        evtBtnTag3.checked = chckValue
+
+    })
+
+    evtBtnTag1.addEventListener('click', (event) => {
+        if(event.currentTarget.checked == false){
+            ckTag.checked = false;
+        }
+    })
+
+    evtBtnTag2.addEventListener('click', (event) => {
+        if(event.currentTarget.checked == false){
+            ckTag.checked = false;
+        }
+    })
+
+    evtBtnTag3.addEventListener('click', (event) => {
+        if(event.currentTarget.checked == false){
+            ckTag.checked = false;
+        }
+    })
+
+})
+
+// purchase 영역 - 하트
+// 주의 사항, const로 만들면 작동을 안함. 무조건 let으로!
+
+let isClicked = false;
+
+function heartBtn(heart) {
+if (isClicked) {
+    heart.style.objectPosition = "top";
+    isClicked = false;
+} else {
+    heart.style.objectPosition = "bottom";
+    isClicked = true;
+}
 }
