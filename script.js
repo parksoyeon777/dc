@@ -77,16 +77,14 @@ function openClose() {
 }
 
 // 푸터 영역 - 옵션
-const options = document.querySelector("#optioned")
-const directions = document.querySelector("#direction");
 
 function selects() {
-    if (options.style.display == "none") {
-        options.style.display = "block"
-        directions.classList.add('active');
+    if (document.querySelector("#optioned").style.display == "none") {
+        document.querySelector("#optioned").style.display = "block"
+        document.querySelector("#direction").classList.add('active');
     } else {
-        options.style.display = "none"
-        directions.classList.remove('active');
+        document.querySelector("#optioned").style.display = "none"
+        document.querySelector("#direction").classList.remove('active');
     }
 }
 
