@@ -499,7 +499,7 @@ input {
 
 .news {
     position: relative;
-    background: url(images/posting/news.jpg) no-repeat;
+    background: url(images/news.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     text-align: center;
