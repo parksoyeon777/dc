@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="heder.css">
+<link rel="stylesheet" href="navigation.css">
 
 <div class="wrap">
     
@@ -49,8 +49,8 @@
             </nav>
 
             <div class="header-icon">
-                <button id="search" class="search" onclick="searchBut()"><img src="images\search_black.png" alt="검색" onClick="location.href='search.html'"></button>
-                <div id="hamburger" class="hamburger" onClick="location.href='navigation.html'">
+                <button id="search" class="search" onclick="searchBut()"><img src="images\search_black.png" alt="검색" onclick="openClose(), location.href='search.html'"></button>
+                <div id="hamburger" class="hamburger" onclick="openClose(), history.back()">
                     <span></span>
                     <span></span>
                     <span></span>
