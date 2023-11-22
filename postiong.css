@@ -609,6 +609,10 @@ input {
     color: black;
 }
 
+.vowel {
+    margin-top: 100px;
+}
+
 .vowel> :nth-child(1) {
     display: flex;
 }
@@ -690,6 +694,10 @@ body {
     float: left;
 }
 
+.news {
+    margin-top: 100px;
+}
+
 .post section {
     height: 250px;
 }
@@ -703,6 +711,10 @@ body {
 .post section> :nth-child(1) img {
     width: 400px;
     height: 200px;
+}
+
+.vowel {
+    margin-top: 100px;
 }
 
 }
