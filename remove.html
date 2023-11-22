@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박소연</title>
+    <link rel="stylesheet" href="membership.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+
+    <div w3-include-html="header.html"></div>
+
+    
+    <main>
+
+
+        <article class="remove-account">
+
+            <h1>Remove Account</h1>
+
+            <form>
+
+                <fieldset>
+                    <h3>회원탈퇴</h3>
+                    <p>정말로 탈퇴하시겠습니까?</p>
+                    <p>탈퇴 시 이용내역이 삭제되며<br>서비스 이용이 제한됩니다.<br>또한 삭제된 계정은 복구되지 않습니다.</p>
+                    <button type="button" onclick="return false, imperfect()">탈퇴하기</button>
+                </fieldset>
+
+                <fieldset>
+                    <h3>설문조사</h3>
+                    <p>불편했던 점, 개선할 점을 공유해주시면<br>더 나은 서비스를 위해 반영하도록 하겠습니다.</p>
+                    <p>탈퇴사유</p>
+                    <select>
+                        <option>선택해주세요.</option>
+                        <option>기록을 삭제하기 위하여</option>
+                        <option>이용에 불편함과 장애가 많아서</option>
+                        <option>다른 사이트가 더 좋아서</option>
+                        <option>콘텐츠에 불만족</option>
+                        <option>원하는 기능이 없어서</option>
+                        <option>더 이상 필요가 없어져서</option>
+                        <option>사이트의 방향성이 가치관과 맞지 않아서</option>
+                        <option>기타</option>
+                    </select>
+                    <label for="memo">건의사항</label>
+                    <textarea id="memo" cols="40" rows="10" placeholder="소중한 의견 귀담아 듣겠습니다."></textarea>
+                    <button type="button" onclick="return false, imperfect()">제출하기</button>
+                </fieldset>
+
+                <fieldset>
+                    <h3>탈퇴 완료</h3>
+                    <img src="images\withdrawal.png">
+                    <p>정상적으로 탈퇴 처리 되었습니다.<br>그 동안 이용해주셔서 감사합니다.</p>
+                    <button type="button" onclick="return false, imperfect()">홈으로</button>
+                </fieldset>
+                
+            </form>
+
+        </article>
+
+
+    </main>
+
+
+    <div w3-include-html="footer.html"></div>
+
+
+    <script>
+        includeHTML();
+    </script>
+
+
+    <script type="text/javascript" src="script.js"></script>
+    
+    
+</body>
+</html>
