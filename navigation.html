@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="navigation.css">
+
+<div class="wrap">
+    
+    <header class="header">
+        <div class="container">
+
+            <h1 class="logo" onClick="location.href='index.html'">
+                <a href="#">
+                    <img src="images\logo.png" alt="에이스침대 로고">
+                </a>
+            </h1>
+
+            <nav id="gnb" class="gnb">
+
+                <div class="mob">
+                    <div>
+                        <a href="#" onclick="return false, imperfect()">웨딩맴버스</a>
+                        <a href="#" onclick="return false, imperfect()">에이스침대몰</a>
+                    </div>
+                </div>
+                
+                <ul>
+                    <li onClick="location.href='purchase.html'"><a href="#">제품</a></li>
+                    <li onClick="location.href='login.html'"><a href="#">로그인</a></li>
+                    <li onClick="location.href='joinus.html'"><a href="#">회원가입</a></li>
+                    <li onClick="location.href='remove.html'"><a href="#">회원탈퇴</a></li>
+                    <li onClick="location.href='board.html'"><a href="#">게시판</a></li>
+                    <li onClick="location.href='qna.html'"><a href="#">문의하기</a></li>
+                    <li onClick="location.href='faq.html'"><a href="#">자주묻는 질문</a></li>
+                </ul>
+
+                <div class="mob">
+                    <a href="#" onclick="return false, imperfect()">
+                        <img src="images\banner1.jpg" alt="">
+                        <span>에이스 침대몰<br>바로가기</span>
+                    </a>
+                    <a href="#" onclick="return false, imperfect()">
+                        <img src="images\banner2.jpg" alt="">
+                        <span>에이스 헤리츠<br>바로가기</span>
+                    </a>
+                    <a href="#" onclick="return false, imperfect()">
+                        <img src="images\banner3.jpg" alt="">
+                        <span>에이스 에비뉴<br>바로가기</span>
+                    </a>
+                </div>
+
+            </nav>
+
+            <div class="header-icon">
+                <button id="search" class="search" onclick="searchBut()"><img src="images\search_black.png" alt="검색" onclick="openClose(), location.href='search.html'"></button>
+                <div id="hamburger" class="hamburger" onclick="openClose(), history.back()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="seachBox" class="seach-box">
+            <div>
+                <input id="searchWindow" type="text" placeholder="검색어를 입력하세요.">
+                <button id="searcBtn" onclick="imperfect()"><img src="images\search_black.png" alt="검색"></button>
+            </div>
+
+            <div>
+                <p>추천검색어</p>
+                <a href="#" onclick="return false, imperfect(), imperfect()">#침대</a>
+                <a href="#" onclick="return false, imperfect(), imperfect()">#가구</a>
+                <a href="#" onclick="return false, imperfect(), imperfect()">#스트레스리스</a>
+                <a href="#" onclick="return false, imperfect(), imperfect()">#슬립케어</a>
+                <a href="#" onclick="return false, imperfect(), imperfect()">#에이스 스토리</a>
+            </div>
+        </div>
+
+    </header>
+
+</div>
+
+<script>
+    includeHTML();
+</script>
+
+<script type="text/javascript" src="script.js"></script>

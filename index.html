@@ -7,131 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <!-- 제이쿼리 -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- 인크루드 -->
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 
     <div class="wrap">
         
-
-        <header class="header">
-            <div class="container">
-
-                <h1 class="logo" onClick="location.href='index.html'">
-                    <a href="#">
-                        <img src="images\logo.png" alt="에이스침대 로고">
-                    </a>
-                </h1>
-    
-                <nav id="gnb" class="gnb">
-
-                    <div class="mob">
-                        <div>
-                            <a href="#" onclick="return false, imperfect()">웨딩맴버스</a>
-                            <a href="#" onclick="return false, imperfect()">에이스침대몰</a>
-                        </div>
-                    </div>
-                    
-                    <ul>
-                        <li onClick="location.href='purchase.html'"><a href="#">제품</a></li>
-                        <li onClick="location.href='login.html'"><a href="#">로그인</a></li>
-                        <li onClick="location.href='joinus.html'"><a href="#">회원가입</a></li>
-                        <li onClick="location.href='remove.html'"><a href="#">회원탈퇴</a></li>
-                        <li onClick="location.href='board.html'"><a href="#">게시판</a></li>
-                        <li onClick="location.href='qna.html'"><a href="#">문의하기</a></li>
-                        <li onClick="location.href='faq.html'"><a href="#">자주묻는 질문</a></li>
-                    </ul>
-
-                    <div class="mob">
-                        <a href="#" onclick="return false, imperfect()">
-                            <img src="images\banner1.jpg" alt="">
-                            <span>에이스 침대몰<br>바로가기</span>
-                        </a>
-                        <a href="#" onclick="return false, imperfect()">
-                            <img src="images\banner2.jpg" alt="">
-                            <span>에이스 헤리츠<br>바로가기</span>
-                        </a>
-                        <a href="#" onclick="return false, imperfect()">
-                            <img src="images\banner3.jpg" alt="">
-                            <span>에이스 에비뉴<br>바로가기</span>
-                        </a>
-                    </div>
-
-                </nav>
-    
-                <div class="header-icon">
-                    <button id="search" class="search" onclick="searchBut()"><img src="images\search_black.png" alt="검색"></button>
-                    <div id="hamburger" class="hamburger" onclick="openClose()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-
-            </div>
-
-            <div id="seachBox" class="seach-box">
-                <div>
-                    <input id="searchWindow" type="text" placeholder="검색어를 입력하세요.">
-                    <button id="searcBtn" onclick="imperfect()"><img src="images\search_black.png" alt="검색"></button>
-                </div>
-
-                <div>
-                    <p>추천검색어</p>
-                    <a href="#" onclick="return false, imperfect(), imperfect()">#침대</a>
-                    <a href="#" onclick="return false, imperfect(), imperfect()">#가구</a>
-                    <a href="#" onclick="return false, imperfect(), imperfect()">#스트레스리스</a>
-                    <a href="#" onclick="return false, imperfect(), imperfect()">#슬립케어</a>
-                    <a href="#" onclick="return false, imperfect(), imperfect()">#에이스 스토리</a>
-                </div>
-            </div>
-
-        </header>
-
-        <script>
-
-            //검색버튼
-            const seachBoxs = document.querySelector("#seachBox");
-
-            function searchBut() {
-                if (seachBoxs.style.display === "none") {
-                    seachBoxs.style.display = "block"
-                } else {
-                    seachBoxs.style.display = "none"
-                }
-            }
-
-            //햄버거 버튼
-
-            const gnbs = document.querySelector("#gnb");
-            const hamburgers = document.querySelector("#hamburger");
-            const searchs = document.querySelector("#search");
-            
-            function screen() {
-                if (window.innerWidth >= 1366) {
-                    gnbs.style.display = "block";
-                } else {
-                    gnbs.style.display = "none";
-                }
-            }
-            
-            window.addEventListener('resize', screen);
-
-            function openClose() {
-                if (gnbs.style.display == "none") {
-                    gnbs.style.display = "block";
-                    hamburgers.classList.add('active');
-                    document.body.style.overflow = "hidden";
-                    searchs.style.display = "none"
-                } else {
-                    gnbs.style.display = "none";
-                    hamburgers.classList.remove('active');
-                    document.body.style.overflow = "scroll";
-                    searchs.style.display = "block"
-                }
-            }
-
-        </script>
-    
+        <div w3-include-html="header.html"></div>
     
         <main class="contents">
 
@@ -543,78 +426,13 @@
 
 
         </main>
-    
-    
-        <footer class="footer">
 
-            <div class="footer-top">
-                <div class="container">
-                    <ul class="fnb">
-                        <li><a href="#" onclick="return false, imperfect()">기업정보</a></li>
-                        <li><a href="#" onclick="return false, imperfect()">이용약관</a></li>
-                        <li><a href="#" onclick="return false, imperfect()">개인정보처리방침</a></li>
-                        <li><a href="#" onclick="return false, imperfect()">매장개설안내</a></li>
-                        <li><a href="#" onclick="return false, imperfect()">특판사업</a></li>
-                        <li><a href="#" onclick="return false, imperfect()">고객지원</a></li>
-                        <li><a href="#" onclick="return false, imperfect()">구매인증센터</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="text">
-                        <p>(주)에이스침대 / 사업자등록번호 : <span class="number">129-81-02666</span></p>
-                        <p>본사 : 경기도 성남시 중원구 사기막골로 105번길 42(상대원동) / 서울영업본부 : 서울특별시 강남구 도산대로 218 / FAX : <span class="number">02-544-8788</span></p>
-                        <p>COPYRIGHT (C) ACE BED CORPORATION ALL RIGHTS RESERVED</p>
-                    </div>
-
-                    <div class="select">
-                        <ul id="optioned">
-                            <li class="option"><a href="#" onclick="return false, imperfect()">ENGLISH</a></li>
-                            <li class="option"><a href="#" onclick="return false, imperfect()">에이스 에비뉴</a></li>
-                            <li class="option"><a href="#" onclick="return false, imperfect()">에이스 헤리츠</a></li>
-                            <li class="option"><a href="#" onclick="return false, imperfect()">에이스 침대몰</a></li>
-                        </ul>
-                        <div class="selected" onclick="selects()">
-                            <span>FAMILY SITE</span>
-                            <span id="direction">▼</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </footer>
-
-        <script>
-
-            const options = document.querySelector("#optioned")
-            const directions = document.querySelector("#direction");
-            
-            function selects() {
-                if (options.style.display == "none") {
-                    options.style.display = "block"
-                    directions.classList.add('active');
-                } else {
-                    options.style.display = "none"
-                    directions.classList.remove('active');
-                }
-            }
-
-        </script>
+        <div w3-include-html="footer.html"></div>
 
     </div>
 
     <script>
-
-        function btn(){
-            alert("로그인하세요");
-        }
-
-        function imperfect(){
-            alert("준비중입니다");
-        }
-
+        includeHTML();
     </script>
 
 </body>
