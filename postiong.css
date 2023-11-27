@@ -293,6 +293,7 @@ input {
 }
 
 .inventory section {
+    padding: 20px 0;
     border-bottom: 1px solid #ccc;
 }
 
@@ -477,15 +478,20 @@ input {
 .breakdown section {
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
+}
+
+.breakdown section> :nth-child(1) {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
-.breakdown section div {
+.breakdown section> :nth-child(1) div {
     display: flex;
+    margin-right: 10px;
 }
 
-.breakdown section div :nth-child(1){
+.breakdown section> :nth-child(1) div :nth-child(1){
     margin-right: 20px;
     padding: 8px;
     border-radius: 25px;
@@ -493,9 +499,16 @@ input {
     color: white;
 }
 
-.breakdown :nth-child(4) div :nth-child(1),
-.breakdown :nth-child(5) div :nth-child(1){
+.breakdown :nth-child(4)> :nth-child(1) div :nth-child(1),
+.breakdown :nth-child(5)> :nth-child(1) div :nth-child(1){
     background-color: red;
+}
+
+.breakdown section> :nth-child(2) {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #eee;
 }
 
 .news {
@@ -640,34 +653,45 @@ input {
     border-bottom: 1px solid #aaa;
 }
 
-.vowel> :nth-child(2) section{
-    padding: 30px;
-    background-color: #eee;
-    border-bottom: 1px solid #ccc;
+.vowel> :nth-child(2) section div {
     display: flex;
+    align-items: center;
 }
 
-.vowel> :nth-child(2) section :nth-child(1){
+.vowel> :nth-child(2) section div :nth-child(1) {
     margin-right: 20px;
+    font-weight: bold;
+}
+
+.vowel> :nth-child(2) section> :nth-child(1) {
+    padding: 10px;
+}
+
+.vowel> :nth-child(2) section> :nth-child(2) {
+    padding: 10px;
+    background-color: #eee;
 }
 
 .vowel> :nth-child(3) {
-    text-align: center;
-}
-
-.vowel> :nth-child(3) p{
-    margin-right: 20px;
-    display: inline-block;
+    display: flex;
     font-size: 2rem;
-    line-height: 2.3rem;
     color: #aaa;
+    justify-content: center;
+    margin: 80px 0;
+  }
+
+.vowel> :nth-child(3) p {
+    margin: 0 12px;
+    padding: 10px 8px;
+    line-height: 2rem;
+    cursor: pointer;
 }
 
-.vowel> :nth-child(3) :nth-child(1){
-    border-bottom: 2px solid red;
-    font-size: 2.4rem;
-    line-height: 2.7rem;
-    color: black;
+.vowel> :nth-child(3) .faq-checkpage {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #222;
+    border-bottom: 3px solid #e6002d;
 }
 
 @media screen and (min-width: 1366px) {
