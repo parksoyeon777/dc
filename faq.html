@@ -21,88 +21,217 @@
     
         <div class="vowel box">
     
-            <div>
-                <p onclick="return false, imperfect()">제품문의</p>
-                <p onclick="return false, imperfect()">회원정보</p>
-                <p onclick="return false, imperfect()">기타안내</p>
+            <div class="tab">
+                <p class="tab__item active"><a href="#tab1">제품문의</a></p>
+                <p class="tab__item"><a href="#tab2">회원정보</a></p>
+                <p class="tab__item"><a href="#tab3">기타안내</a></p>
             </div>
     
-            <div>
-                <section>
-                    <div>
-                        <p>Q</P>
-                        <p>마이크로케어(침대커버) 세탁은 어느정도 주기로 해야 하나요?</p>
-                    </div>
-                    <div>
-                        <p>A</p>
-                        <p>SMART SLEEVE는  “X자 연결고리를 가진 독특한 중간층으로 이루어진 3D 직물입니다.<br><br>외형은 그물망 구조의 형태로 시중에서 사용하는 매쉬소재와 유사한 구조이지만  탁월한 탄성과 공기투과력을 가진 3D 입체구조이면서도 뛰어난 부드러움과 실용적인 부피감을 자랑하는 차별화된 소재입니다. 또한 SMART SLEEVE는 3D 입체구조를 기본으로 수면문제에 따라 처방된 물질을 수백만개의 캡슐에 담은 캡슐 포함형과 필름을 처리한 방수필름 포함형 등 혁신적인 기술을 추가한 새로운 개념의 매트리스 보호커버입니다.</p>
-                    </div>
-                </section>
-                <section>
-                    <div>
-                        <p>Q</p>
-                        <p>워터프루프 제품은 어떤 원리로 방수기능을 하게되는 건가요?</p>
-                    </div>
-                    <div>
-                        <p>A</p>
-                        <p>워터프루프 제품의 상면 내부는 100% 방수기능을 가진 폴리우레탄 필름으로 처리 되어 있습니다.<br><br>이 필름은 쾌적한 수면을 위한 탄성과 우수한 통기성을 지니고 있습니다. 이제 방수는 기본! 통기성까지 해결한 혁신적인 기술의 워터프루프 제품으로 야뇨증과 요실금으로 고생하시는 분들 또는 어린 자녀를 두신 분께 매우 적합합니다.</p>
-                    </div>
-                </section>
-                <section>
-                    <div>
-                        <p>Q</p>
-                        <p>워터프루프 제품의 기능이 지속되는 기간은 어느 정도나 되나요? 세탁을 하여도 유지되나요?</p>
-                    </div>
-                    <div>
-                        <p>A</p>
-                        <p>워터 프루프 제품의 방수기능은 스마트슬리브가 권장하는 세탁방법으로 관리시 반 영구적으로 유지됩니다.<br>단, 제품상면 내부의 폴리우레탄 필름의 부드러운 treatment를 보호하기 위해 세탁시, 안팎을 뒤집어서 낮은 강도의 탈수로 세탁하는 것을 권장합니다.</p>
-                    </div>
-                </section>
-                <section>
-                    <div>
-                        <p>Q</p>
-                        <p>무봉제 기법은 무엇인가요?</p>
-                    </div>
-                    <div>
-                        <p>A</p>
-                        <p>무봉제 기법의 특징은 일반 봉제와 퀄팅방법에 의한 바늘 구멍이 없으므로 바늘구멍에 의한 충전재의 새어 나옴이 없어 세탁 및 관리가 용이하고 제품 표면이 항상 매끄럽고 깨끗하게 유지됩니다.<br><br>패턴 문양 또한 전체적으로 균일하고 미려하여 오래 사용하여도 깔끔함이 유지되는 특징 또한 있습니다.<br><br>봉제땀 구멍으로 인한 각종 유해인자 및 진드기의 이동이 원천 봉쇄되어 향균력과 안티 바이러스 기능이 탁월하고 진드기 방지 기능이 배가되며, 제품의 수명과 동일하게 영속적으로 지속된다는 장점이 있습니다.</p>
-                    </div>
-                </section>
-                <section>
-                    <div>
-                        <p>Q</p>
-                        <p>항균기능은 어느 정도 지속되나요?</p>
-                    </div>
-                    <div>
-                        <p>A</p>
-                        <p>Micro care는 별도의 화학적 성분을 첨가한 코팅방법으로 항균기능을 첨가한 제품이 아니고 원사 자체를 초극세사로 가공하는 기술로써 원단조직이 촘촘하여 물과 공기 이외의 먼지, 진드기, 세균 등이 투과 할 수 없는 탁월한 기술력으로 항균기능이 발생하는  제품입니다.<br><br>잦은 세탁과 강한 화학성분세제, 강한 마찰 등 외부자극요인을 적절히 관리한다면 소재 본연의 항균기능은 장기간 지속된다고 할 수 있습니다.</p>
-                    </div>
-                </section>
-            </div>
+            <div class="tab__content-wrapper">
+                <div id="tab1" class="tab__content active">
+                    <section>
+                        <div>
+                            <p>Q</P>
+                            <p>마이크로케어(침대커버) 세탁은 어느정도 주기로 해야 하나요?</p>
+                        </div>
+                        <div>
+                            <p>A</p>
+                            <p>SMART SLEEVE는  “X자 연결고리를 가진 독특한 중간층으로 이루어진 3D 직물입니다.<br><br>외형은 그물망 구조의 형태로 시중에서 사용하는 매쉬소재와 유사한 구조이지만  탁월한 탄성과 공기투과력을 가진 3D 입체구조이면서도 뛰어난 부드러움과 실용적인 부피감을 자랑하는 차별화된 소재입니다. 또한 SMART SLEEVE는 3D 입체구조를 기본으로 수면문제에 따라 처방된 물질을 수백만개의 캡슐에 담은 캡슐 포함형과 필름을 처리한 방수필름 포함형 등 혁신적인 기술을 추가한 새로운 개념의 매트리스 보호커버입니다.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <p>Q</p>
+                            <p>워터프루프 제품은 어떤 원리로 방수기능을 하게되는 건가요?</p>
+                        </div>
+                        <div>
+                            <p>A</p>
+                            <p>워터프루프 제품의 상면 내부는 100% 방수기능을 가진 폴리우레탄 필름으로 처리 되어 있습니다.<br><br>이 필름은 쾌적한 수면을 위한 탄성과 우수한 통기성을 지니고 있습니다. 이제 방수는 기본! 통기성까지 해결한 혁신적인 기술의 워터프루프 제품으로 야뇨증과 요실금으로 고생하시는 분들 또는 어린 자녀를 두신 분께 매우 적합합니다.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <p>Q</p>
+                            <p>워터프루프 제품의 기능이 지속되는 기간은 어느 정도나 되나요? 세탁을 하여도 유지되나요?</p>
+                        </div>
+                        <div>
+                            <p>A</p>
+                            <p>워터 프루프 제품의 방수기능은 스마트슬리브가 권장하는 세탁방법으로 관리시 반 영구적으로 유지됩니다.<br>단, 제품상면 내부의 폴리우레탄 필름의 부드러운 treatment를 보호하기 위해 세탁시, 안팎을 뒤집어서 낮은 강도의 탈수로 세탁하는 것을 권장합니다.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <p>Q</p>
+                            <p>무봉제 기법은 무엇인가요?</p>
+                        </div>
+                        <div>
+                            <p>A</p>
+                            <p>무봉제 기법의 특징은 일반 봉제와 퀄팅방법에 의한 바늘 구멍이 없으므로 바늘구멍에 의한 충전재의 새어 나옴이 없어 세탁 및 관리가 용이하고 제품 표면이 항상 매끄럽고 깨끗하게 유지됩니다.<br><br>패턴 문양 또한 전체적으로 균일하고 미려하여 오래 사용하여도 깔끔함이 유지되는 특징 또한 있습니다.<br><br>봉제땀 구멍으로 인한 각종 유해인자 및 진드기의 이동이 원천 봉쇄되어 향균력과 안티 바이러스 기능이 탁월하고 진드기 방지 기능이 배가되며, 제품의 수명과 동일하게 영속적으로 지속된다는 장점이 있습니다.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <p>Q</p>
+                            <p>항균기능은 어느 정도 지속되나요?</p>
+                        </div>
+                        <div>
+                            <p>A</p>
+                            <p>Micro care는 별도의 화학적 성분을 첨가한 코팅방법으로 항균기능을 첨가한 제품이 아니고 원사 자체를 초극세사로 가공하는 기술로써 원단조직이 촘촘하여 물과 공기 이외의 먼지, 진드기, 세균 등이 투과 할 수 없는 탁월한 기술력으로 항균기능이 발생하는  제품입니다.<br><br>잦은 세탁과 강한 화학성분세제, 강한 마찰 등 외부자극요인을 적절히 관리한다면 소재 본연의 항균기능은 장기간 지속된다고 할 수 있습니다.</p>
+                        </div>
+                    </section>
     
-            <div id="faq-page">
-                <p class="faq-checkpage">1</p>
-                <p>2</p>
-                <p>3</p>
+                    <div id="vowel-page" class="vowel-page">
+                        <p class="vowel-checkpage">1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                </div>
+    
+                <div id="tab2" class="tab__content">
+                    <section>
+                        <div>
+                            <p>Q</P>
+                            <p>웨딩멤버스 회원번호는 무엇인가요?</p>
+                        </div>
+                        <div>
+                            <p>웨딩멤버스 고객님을 식별하는 고유 회원번호로 제품 구매 시 필히 판매원에게 제시해 주셔야 다양한 혜택을 받으실 수 있습니다</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <p>Q</p>
+                            <p>웨딩멤버스 회원번호를 분실 시 어떻게 해야 하나요?</p>
+                        </div>
+                        <div>
+                            <p>A</p>
+                            <p>에이스침대 홈페이지 로그인 후 상단 마이페이지 - 회원정보 수정 메뉴에서 확인 가능합니다.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <p>Q</p>
+                            <p>웨딩멤버스 회원 자격 유지 기간은 어떻게 되나요</p>
+                        </div>
+                        <div>
+                            <p>A</p>
+                            <p>웨딩멤버스 회원 자격 유지기간 및 혜택은 6개월간 지속됩니다.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <p>Q</p>
+                            <p>회원탈퇴는 어떻게 하나요?</p>
+                        </div>
+                        <div>
+                            <p>A</p>
+                            <p>회원탈퇴는 로그인 하신 후 상단의 마이페이지 - 회원정보 수정 메뉴에서 '탈퇴하기'를 클릭하시면 됩니다.<br>회원 탈퇴와 함께 고객님의 정보는 재생될 수 없는 방법으로 완전 삭제되므로 안심하실 수 있습니다.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <p>Q</p>
+                            <p>웨딩멤버스 회원 가입은 어떻게 하나요?</p>
+                        </div>
+                        <div>
+                            <p>A</p>
+                            <p> 에이스침대 홈페이지 회원 가입 이후에 결혼 증빙자료(예식장 계약서, 청첩장)와 결혼예정일을 입력 하시면, 가입신청 후 3~5일 후 가입 축하 메시지와 웨딩멤버스 회원번호가 고객님의 핸드폰과 이메일로 발송 됩니다.</p>
+                        </div>
+                    </section>
+    
+                    <div id="vowel-page" class="vowel-page">
+                        <p class="vowel-checkpage">1</p>
+                        <p>2</p>
+                        <p>3</p>
+                    </div>
+                </div>
+    
+                <div id="tab3" class="tab__content">
+                    <section>
+                        <div>
+                            <p>Q</P>
+                            <p>가까운 대리점을 알고 싶은데요?</p>
+                        </div>
+                        <div>
+                            <p>A</p>
+                            <p>홈페이지 '매장안내' 메뉴를 클릭하시어 고객님과 가까운 위치의 매장을 확인할 수 있습니다.<br><br>매장에 대한 주소, 연락처, 판매제품 등의 간략한 소개가 되어 있으며 방문하고자 하는 대리점을 선택하시면 됩니다.<br>관심매장으로 설정할 수 있으며, 고객님이 설정하신 관심매장은 마이페이지- 관심 제품/매장 메뉴에서 다시 확인할 수 있습니다.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <p>Q</p>
+                            <p>홈페이지에 왜 가격이 안나와 있나요?</p>
+                        </div>
+                        <div>
+                            <p>A</p>
+                            <p>홈페이지는 회사 소개 및 에이스 침대 제품의 특장점 위주로 만들어 졌습니다.<br>제품 가격이 궁금하실 경우 홈페이지 메뉴 '매장안내'를 이용하여 원하는 대리점에 전화 또는 방문하시어 문의하시거나 에이스침대 인터넷 쇼핑몰에서 검색하실 수 있습니다.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <p>Q</p>
+                            <p>Stressless 제품을 홈페이지에서 볼 수 있나요?</p>
+                        </div>
+                        <div>
+                            <p>A</p>
+                            <p>홈페이지 좌측 제품 카테고리의 Stressless 메뉴를 클릭하면 다양한 Stressless 제품을 확인할 수 있습니다. </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <p>Q</p>
+                            <p>침대를 사용해본 적이 없어요. 어떤 제품을 선택해야 할까요?</p>
+                        </div>
+                        <div>
+                            <p>A</p>
+                            <p>사람들의 몸이 각각 다른 만큼 침대의 매트리스도 달라져야 하기 때문에 에이스는 여러분의 체형과 수면 조건에 맞춰 다양한 매트리스를 생산하고 있습니다.<br>온돌 생활을 해서, 침대를 처음 사용하시는 분들이나 아이들은 그 중에서 쿠션이 단단한 매트리스를 선택 하는것이 침대생활 적응에 많은 도움이 됩니다.<br>또한 침대생활을 어느 정도 해보신 분에게는 부드러운 매트리스가 쾌적한 수면을 위해 좋으며 무엇보다 중요한 것은 직접 누워보고 편안함과 안락함을 느끼는 제품을 선택하는 것이니, 에이스침대 매장에 방문하셔서 내 몸에 꼭 맞는 매트리스를 선택하세요!</p>
+                        </div>
+                    </section>
+                </div>
             </div>
     
         </div>
 
         <script>
+            //탭메뉴
+            //https://happy-hee8.tistory.com/3
 
+            const tabItem = document.querySelectorAll(".tab__item");
+            const tabContent = document.querySelectorAll(".tab__content");
+
+            tabItem.forEach((item, index) => {
+
+            item.addEventListener("click", (e) => {
+                e.preventDefault();
+                
+                tabContent.forEach((content) => {
+                content.classList.remove("active");
+                });
+
+                tabItem.forEach((content) => {
+                content.classList.remove("active");
+                });
+
+                tabItem[index].classList.add("active");
+                tabContent[index].classList.add("active");
+            });
+            });
+
+            // 숫자메뉴
             window.addEventListener("load", function() {
-            const tagList = document.querySelectorAll("#faq-page > p");
+            const tagList = document.querySelectorAll("#vowel-page > p");
             for (let i = 0; i < tagList.length; i++) {
                 tagList[i].addEventListener("click", function() {
                 clearPage();
-                this.classList.add("faq-checkpage");
+                this.classList.add("vowel-checkpage");
                 });
             }
 
             function clearPage() {
 
                 for (let i = 0; i < tagList.length; i++) {
-                tagList[i].classList.remove("faq-checkpage");
+                tagList[i].classList.remove("vowel-checkpage");
                 }
             }
             });

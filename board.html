@@ -267,15 +267,36 @@
                 </div>
             </section>
     
-            <div>
-                <p>1</p>
-                <p onclick="imperfect()">2</p>
-                <p onclick="imperfect()">3</p>
-                <p onclick="imperfect()">4</p>
-                <p onclick="imperfect()">5</p>
+            <div id="post-page">
+                <p class="post-checkpage">1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
             </div>
     
         </article>
+
+        <script>
+
+            window.addEventListener("load", function() {
+            const tagList = document.querySelectorAll("#post-page > p");
+            for (let i = 0; i < tagList.length; i++) {
+                tagList[i].addEventListener("click", function() {
+                clearPage();
+                this.classList.add("post-checkpage");
+                });
+            }
+        
+            function clearPage() {
+        
+                for (let i = 0; i < tagList.length; i++) {
+                tagList[i].classList.remove("post-checkpage");
+                }
+            }
+            });
+        
+        </script>
     
         
     </main>

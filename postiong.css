@@ -69,6 +69,8 @@ input {
 
 /* 시작 */
 
+/* 게시판 영역 */
+
 .board> :nth-child(1) {
     margin-top: 100px;
 }
@@ -106,6 +108,7 @@ input {
     margin-right: 10px;
     margin-bottom: 30px;
     background-color: #eee;
+    cursor: pointer;
 }
 
 .writing :nth-child(5) label img{
@@ -323,6 +326,90 @@ input {
     background-color: white;
 }
 
+.post> p {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+.post> p> span {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    color: red;
+}
+
+.post> :nth-child(2) {
+    position: relative;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post> :nth-child(2) select {
+    width: 100px;
+    margin-right: 10px;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+}
+
+.post> :nth-child(2) input {
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+}
+
+.post> :nth-child(2) img{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%,-50%);
+    width: 20px;
+}
+
+.post section {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.post section> :nth-child(1) {
+    position: relative;
+}
+
+.post section> :nth-child(1) img {
+    max-height: 200px;
+    object-fit: cover;
+    background-color: #333;
+}
+
+.post section> :nth-child(2)> span {
+    line-height: 3rem;
+    color: #aaa;
+}
+
+.post> :nth-child(9) {
+    display: flex;
+    font-size: 2rem;
+    color: #aaa;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.post> :nth-child(9) p {
+    margin: 0 12px;
+    padding: 10px 8px;
+    line-height: 2rem;
+    cursor: pointer;
+}
+
+.post> :nth-child(9) .post-checkpage {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #222;
+    border-bottom: 3px solid #e6002d;
+}
+
+/* 문의하기 영역 */
+
 .inquiry> :nth-child(2) {
     margin-bottom: 50px;
     border-bottom: 1px solid #ccc;
@@ -511,6 +598,80 @@ input {
     background-color: #eee;
 }
 
+/* 자주 묻는 질문 영역 */
+
+.vowel {
+    margin-top: 100px;
+}
+
+.vowel .tab {
+    display: flex;
+}
+
+.vowel .tab p{
+    width: 100%;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.vowel .tab p.active {
+    background-color: red;
+    color: white;
+}
+
+.vowel .tab> :nth-child(1) span{
+    color: white;
+}
+
+.vowel .tab__content-wrapper .tab__content {
+    margin: 50px 0;
+    display: none;
+}
+
+.vowel .tab__content-wrapper .tab__content.active {
+    display: block;
+}
+
+.vowel .tab__content-wrapper .tab__content section div {
+    display: flex;
+    align-items: center;
+}
+
+.vowel .tab__content-wrapper .tab__content section div> :nth-child(1) {
+    margin-right: 20px;
+}
+
+.vowel .tab__content-wrapper .tab__content section> :nth-child(1) {
+    padding: 10px;
+}
+
+.vowel .tab__content-wrapper .tab__content section> :nth-child(2) {
+    padding: 10px;
+    background-color: #eee;
+}
+
+.vowel .tab__content-wrapper .tab__content .vowel-page {
+    display: flex;
+    font-size: 2rem;
+    color: #aaa;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.vowel .tab__content-wrapper .tab__content .vowel-page p {
+    margin: 0 12px;
+    padding: 10px 8px;
+    line-height: 2rem;
+    cursor: pointer;
+}
+
+.vowel .tab__content-wrapper .tab__content .vowel-page .vowel-checkpage {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #222;
+    border-bottom: 3px solid #e6002d;
+}
+
 .news {
     position: relative;
     margin-top: 100px;
@@ -545,155 +706,6 @@ input {
     line-height: 1.3rem;
 }
 
-.post> p {
-    margin-bottom: 30px;
-    font-size: 1rem;
-    line-height: 1.3rem;
-}
-
-.post> p> span {
-    font-size: 2rem;
-    line-height: 2.3rem;
-    color: red;
-}
-
-.post> :nth-child(2) {
-    position: relative;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.post> :nth-child(2) select {
-    width: 100px;
-    margin-right: 10px;
-    padding: 10px 5px;
-    border: 1px solid #ccc;
-}
-
-.post> :nth-child(2) input {
-    width: 100%;
-    padding: 10px 5px;
-    border: 1px solid #ccc;
-}
-
-.post> :nth-child(2) img{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(-50%,-50%);
-    width: 20px;
-}
-
-.post section {
-    margin-bottom: 50px;
-    border-bottom: 1px solid #ccc;
-}
-
-.post section> :nth-child(1) {
-    position: relative;
-}
-
-.post section> :nth-child(1) img {
-    max-height: 200px;
-    object-fit: cover;
-    background-color: #333;
-}
-
-.post section> :nth-child(2)> span {
-    line-height: 3rem;
-    color: #aaa;
-}
-
-.post :nth-child(9) {
-    text-align: center;
-}
-
-.post :nth-child(9) p{
-    margin-right: 20px;
-    display: inline-block;
-    font-size: 2rem;
-    line-height: 2.3rem;
-    color: #aaa;
-}
-
-.post :nth-child(9) :nth-child(1){
-    border-bottom: 2px solid red;
-    font-size: 2.4rem;
-    line-height: 2.7rem;
-    color: black;
-}
-
-.vowel {
-    margin-top: 100px;
-}
-
-.vowel> :nth-child(1) {
-    display: flex;
-}
-
-.vowel> :nth-child(1) p{
-    width: 100%;
-    border: 1px solid #ccc;
-    text-align: center;
-}
-
-.vowel> :nth-child(1)> :nth-child(1){
-    background-color: red;
-    color: white;
-}
-
-.vowel> :nth-child(1)> :nth-child(1) span{
-    color: white;
-}
-
-.vowel> :nth-child(2) {
-    margin: 50px 0;
-    border-top: 1px solid #aaa;
-    border-bottom: 1px solid #aaa;
-}
-
-.vowel> :nth-child(2) section div {
-    display: flex;
-    align-items: center;
-}
-
-.vowel> :nth-child(2) section div :nth-child(1) {
-    margin-right: 20px;
-    font-weight: bold;
-}
-
-.vowel> :nth-child(2) section> :nth-child(1) {
-    padding: 10px;
-}
-
-.vowel> :nth-child(2) section> :nth-child(2) {
-    padding: 10px;
-    background-color: #eee;
-}
-
-.vowel> :nth-child(3) {
-    display: flex;
-    font-size: 2rem;
-    color: #aaa;
-    justify-content: center;
-    margin: 80px 0;
-  }
-
-.vowel> :nth-child(3) p {
-    margin: 0 12px;
-    padding: 10px 8px;
-    line-height: 2rem;
-    cursor: pointer;
-}
-
-.vowel> :nth-child(3) .faq-checkpage {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #222;
-    border-bottom: 3px solid #e6002d;
-}
-
 @media screen and (min-width: 1366px) {
 
 body {
@@ -705,6 +717,8 @@ body {
     margin: 0 auto;
     margin-bottom: 100px;
 }
+
+/* 게시판 영역 */
 
 .reading> :nth-child(5)> section img{
     width: 80%;
@@ -718,10 +732,6 @@ body {
     width: 400px;
     margin-right: 30px;
     float: left;
-}
-
-.news {
-    margin-top: 100px;
 }
 
 .post section {
@@ -739,7 +749,13 @@ body {
     height: 200px;
 }
 
+/* 자주 묻는 질문 영역 */
+
 .vowel {
+    margin-top: 100px;
+}
+
+.news {
     margin-top: 100px;
 }
 

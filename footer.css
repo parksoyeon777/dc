@@ -125,6 +125,7 @@ a {
 
 .footer-bottom .container .select {
     position: relative;
+    cursor: pointer;
 }
 
 .footer-bottom .container .select ul {
