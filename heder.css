@@ -144,6 +144,7 @@ a {
 
 .gnb ul li {
     padding: 8px 8px;
+    cursor: pointer;
 }
 
 .gnb ul li:hover {
