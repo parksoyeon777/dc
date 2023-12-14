@@ -23,7 +23,6 @@ body {
 
 h1:not(header *) {
     font-family: 'Noto Serif Display', serif;
-    margin-top: 100px;
     text-align: center;
     font-size: 2.2rem;
     line-height: 2.2rem;
@@ -35,6 +34,10 @@ h2:not(header *) {
     font-size: 2.0rem;
     line-height: 3.0rem;
     margin-bottom: 30px;
+}
+
+main {
+    margin-top: 100px;
 }
 
 h3:not(header *) {
